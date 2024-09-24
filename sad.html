@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction History</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <div class="bg-white py-4 px-6 flex justify-between items-center shadow-md">
+    <button class="bg-green-400 text-white px-4 py-2 rounded-full">Blog</button>
+    <div class="text-xl font-semibold flex items-center">
+      <span>Donate Bangladesh</span>
+      <span class="ml-3">💰 98600 BDT</span>
+    </div>
+  </div>
+
+  <!-- Transaction History Section -->
+  <div class="max-w-4xl mx-auto mt-10 bg-white p-6 rounded-lg shadow-md">
+    <div class="flex justify-center mb-6">
+      <button class="bg-white border border-gray-300 text-gray-600 px-6 py-2 rounded-full focus:outline-none">
+        Donation
+      </button>
+      <button class="bg-green-400 text-white px-6 py-2 rounded-full ml-4 focus:outline-none">
+        History
+      </button>
+    </div>
+
+    <!-- Transaction List -->
+    <div class="space-y-6">
+      <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+        <p class="font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+        <p class="text-sm text-gray-600">Date: Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+        <p class="font-bold">6500 Taka is Donated for Flood Relief in Feni, Bangladesh</p>
+        <p class="text-sm text-gray-600">Date: Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+        <p class="font-bold">15500 Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+        <p class="text-sm text-gray-600">Date: Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const donationButton = document.querySelector('.donation-button');
+    const historyButton = document.querySelector('.history-button');
+
+    donationButton.addEventListener('click', () => {
+      // Add functionality to switch to Donation view
+      alert("Switch to Donation View");
+    });
+
+    historyButton.addEventListener('click', () => {
+      // Add functionality to switch to History view
+      alert("You're already on the History View");
+    });
+  </script>
+
+
+</body>
+
+</html>
